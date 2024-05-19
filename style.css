@@ -20,7 +20,7 @@ div.logo{
     box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.61);
 }
 .search-bar{
-    padding-top: 5px;
+    padding-top: 50px;
     flex-grow: 1;
     position: relative;
     display: flex;
@@ -130,26 +130,20 @@ img.img-logo{
 }
 .footer{
     background-color: black;
+    background-repeat: repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: center;
 }
-.footer h3{
-    color: white;
-}
 .footer p{
+    justify-content: center;
     color: white;
     font-weight: 100;
     padding-top: 25px;
     padding-bottom: 25px;
-}
-.footer li{
     display: flex;
-    color: white;
-    text-decoration: none;
-    justify-content: space-around;
-    text-align: center;
+    align-items: center;
 }
 .localizacao{
     display: flex;
@@ -161,6 +155,7 @@ img.img-logo{
 }
 .localizacao p {
     padding: 10px;
+    
 }
 i{
     padding-right: 10px;
@@ -210,13 +205,6 @@ div.texts{
 }
 .text-secundary h1{
     padding: 30px;
-}
-.seta-down{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 190px;
-    padding-bottom: 50px;
 }
 .bi-arrow-down:hover{
     background-color: #1212129c;
@@ -318,6 +306,7 @@ a{
 /* Estilos para o thumb (alça) da barra de rolagem */
 ::-webkit-scrollbar-thumb {
     background-color: #121212;
+    border-radius: 10px;
     /* Cor da alça da barra de rolagem */
     /* Borda arredondada para a alça */
 }
@@ -325,17 +314,18 @@ a{
 /* Estilos para o thumb quando o mouse passa sobre ele */
 ::-webkit-scrollbar-thumb:hover {
     background-color: #a5a3a3;
-    border-radius: 10px;
     /* Cor da alça da barra de rolagem ao passar o mouse */
 }
 
 .icon {
+    display: flex;
+    justify-content: center;
     position: fixed;
     bottom: 50px;
     right: 30px;
     font-size: 30px;
     background-color: #01e675;
-    color: #000000;
+    color: #ff0000;
     border-radius: 50%;
     padding: 3px;
     width: 50px;
@@ -352,9 +342,8 @@ a{
 }
 
 .icon:hover {
-    background-color: #159704b0;
-    color: #ffffff;
-    font-weight: 900;
+    background-color: #ffffff;
+    color: #ff0000;
     box-shadow: 2px 2px 20px #5fe690;
 }
 .bi-whatsapp::before{
@@ -362,11 +351,14 @@ a{
     text-align: center;
     justify-content: center;
     padding: 5px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.bi-whatsapp:hover{
+    color: red;
 }
 i.bi.bi-whatsapp{
     padding: 0;
-    display: flex;
+    display: flex;  
     justify-content: center;
     align-items: center;
 }
@@ -394,18 +386,7 @@ i.bi.bi-whatsapp{
         margin: 20px auto;
     }
     .select-category {
-        margin: 5px;
-        padding: 5px;
-        border: 2px solid rgba(0, 0, 0, 0.397);
-        border-radius: 5px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-        font-size: 1em;
-        display: flex;
-        font-weight: 300;
+        display: none;
     
     }
     .search-bar #searchInput{
@@ -426,7 +407,7 @@ i.bi.bi-whatsapp{
         position: relative;
         display: flex;
         padding-top: 20px;
-        justify-content: space-between;
+        justify-content: center;
         
     }
     img.img-logo{
@@ -435,14 +416,6 @@ i.bi.bi-whatsapp{
         display: flex;
         justify-content: center;    
         padding-left: 0;
-    }
-    .footer p {
-        color: white;
-        font-weight: 100;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        display: flex;
-        text-align: center;
     }
     div.header{
         display: flex;
@@ -456,16 +429,18 @@ i.bi.bi-whatsapp{
         display: flex;
         justify-content: center;
         text-align: center;
-        flex-direction: column;
-        padding-top: 25px;
-        padding-bottom: 20px;
-        padding-left: 1%;
-        padding-right: 1%;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
     .text-primary h1{
-        font-size: 21px;
+        font-size: 5vw;
+        white-space: nowrap;
         padding: 0px;
-        font-weight: 900;
+        font-weight: 800;
+        padding-left: 0;
+        padding-right: 0;
     }
     .text-primary h4{
         font-weight: 20;
@@ -479,8 +454,8 @@ i.bi.bi-whatsapp{
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         padding-left: 0;
         padding-right: 0;
     }
@@ -495,17 +470,21 @@ i.bi.bi-whatsapp{
     }
     .text-secundary h1{
         padding: 5px;
-    }
-    .seta-down{
-        display: flex;
-        padding-top: 10px;
-        margin: 0;
+        font-size: 20px;
     }
     div.texts {
-        height: 100vh;
         padding-left: 5%;
         padding-right: 5%;
-        padding-top: 0px;
+        padding-top: 50px;
         padding-bottom: 0%;
+    }
+    .footer p{
+        width: 100%;
+    }
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
