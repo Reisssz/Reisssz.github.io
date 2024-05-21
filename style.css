@@ -14,10 +14,27 @@ div.logo{
 .header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
     background-color: #121212;
     box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.61);
+}
+a.a-header{
+    color: white;
+    padding-right: 100px;
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+}
+a.a-header:hover{
+    color: #707070;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+nav.nav{
+    display: flex;
+    justify-content: right;
+    padding: 20px;
 }
 .search-bar{
     padding-top: 50px;
@@ -101,7 +118,7 @@ div.logo{
 }
 img.img-logo{
     width: 12%;
-    padding-left: 50px;
+    padding-right: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +149,7 @@ img.img-logo{
     background-color: black;
     background-repeat: repeat;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     justify-content: center;
 }
@@ -144,6 +161,14 @@ img.img-logo{
     padding-bottom: 25px;
     display: flex;
     align-items: center;
+}
+.h1-footer{
+    display: flex;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    justify-content: space-between;
+    padding-left: 65%;
 }
 .localizacao{
     display: flex;
@@ -354,7 +379,7 @@ a{
     color: rgb(0, 0, 0);
 }
 .bi-whatsapp:hover{
-    color: red;
+    color: red9;
 }
 i.bi.bi-whatsapp{
     padding: 0;
@@ -412,7 +437,7 @@ i.bi.bi-whatsapp{
     }
     img.img-logo{
         width: 25%;
-        margin-right: 0px;
+        padding: 1px;
         display: flex;
         justify-content: center;    
         padding-left: 0;
@@ -420,8 +445,8 @@ i.bi.bi-whatsapp{
     div.header{
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 40px 10px;
+        justify-content: left;
+        padding-left: 15px;
         background-color: rgb(8, 8, 8);
         box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.61);
     }
@@ -466,6 +491,7 @@ i.bi.bi-whatsapp{
         padding-right: 0;
         padding-left: 0;
         padding-bottom: 20px;
+       text-align: justify;
 
     }
     .text-secundary h1{
@@ -486,5 +512,8 @@ i.bi.bi-whatsapp{
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+    nav.nav{
+        display: none;
     }
 }
